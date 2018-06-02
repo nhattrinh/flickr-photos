@@ -13,21 +13,17 @@ class SearchBar extends Component{
         };
     }
 
-    handleClick(){
-        if (!this.state.tags.length){
-            this.props.resetQuery();
-            this.props.resetLink();
-        }
-        else{
-            this.props.incrementQueryCount();
-            this.props.setTags(this.state.tags);
-        }
-    }
-
     render(){
         return(
             <div className='container' style={{ marginTop: 10 }}>
-                <form>
+                <form onSubmit={
+                    e => {
+                        if (this.state.tags.length){
+                            e.preventDefault();
+                            this.props.incrementQueryCount();
+                            this.props.setTags(this.state.tags);
+                        }
+                    }}>
                     <div className='form-group'>
                         <label>Search by Tags</label>
                             <div className='input-group'>
@@ -39,7 +35,7 @@ class SearchBar extends Component{
                                 className='form-control col-sm-12 col-md-10'
                                 onChange={event => this.setState({tags: event.target.value})}
                             />
-                            <Button className='col-sm-12 col-md-2' onClick={this.handleClick.bind(this)} bsStyle='primary'>Search</Button>
+                            <Button className='col-sm-12 col-md-2' type='submit' bsStyle='primary'>Search</Button>
                         </div>
                     </div>
                 </form>

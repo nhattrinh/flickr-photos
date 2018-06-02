@@ -16,16 +16,15 @@ class ImagesGrid extends Component{
     }
 
     componentWillReceiveProps(nextProps){
-        if ( nextProps.queryCount !== 0 ){
+        if ( nextProps.queryCount !== 0 )
             this.setImages();
-        }
     }
 
     setImages(){
         fetchJsonp(this.props.link,{
             jsonpCallbackFunction: 'jsonFlickrFeed'
           })
-            .then(function(response){return response.json();})
+            .then(response => response.json())
             .then(response => {
                 this.props.setImages(response.items);
                 this.setState({images: response.items});
