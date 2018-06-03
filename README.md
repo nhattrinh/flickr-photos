@@ -1,5 +1,6 @@
 # flickr-photos
 [![Build Status](https://travis-ci.org/nt2013/flickr-photos.svg?branch=master)](https://travis-ci.org/nt2013/flickr-photos)
+
 ReactJS web app with Redux to show photos retrieved from Flickr.
 
 ### Prerequisites
