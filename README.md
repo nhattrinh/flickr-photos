@@ -1,4 +1,5 @@
 # flickr-photos
+[![Build Status](https://travis-ci.org/nt2013/flickr-photos.svg?branch=master)](https://travis-ci.org/nt2013/flickr-photos)
 ReactJS web app with Redux to show photos retrieved from Flickr.
 
 ### Prerequisites
@@ -15,7 +16,7 @@ ReactJS web app with Redux to show photos retrieved from Flickr.
 
 ## Deployment
 
-Automatically deployed to Heroku at (https://flickr-photos-react.herokuapp.com/)
+Automatically deployed to Heroku at https://flickr-photos-react.herokuapp.com/
 
 ## Built With
 
