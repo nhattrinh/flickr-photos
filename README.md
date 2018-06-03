@@ -21,5 +21,5 @@ Automatically deployed to Heroku at https://flickr-photos-react.herokuapp.com/
 
 ## Built With
 
-* [React](https://github.com/facebook/react) - The web framework used
+* [React](https://github.com/facebook/react) - The view library used
 * [Redux](https://github.com/reduxjs/redux) - State Management
