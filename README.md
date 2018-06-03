@@ -13,21 +13,6 @@ ReactJS web app with Redux to show photos retrieved from Flickr.
 - run the npm start command.
 - go to the address localhost:3000 on your browser and you will see the app
 
-### Installing
-
-If you prefer to use npm with your Node.js
-
-```
-npm install
-```
-
-Ff you prefer to use yarn
-
-```
-yarn install
-```
-
-
 ## Deployment
 
 Automatically deployed to Heroku at (https://flickr-photos-react.herokuapp.com/)
